@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html{
+    background-color: #333;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    padding:1vw;
+  }
+  
+  h1{
+    color:white;
+    margin:30px auto;
+    width:200px;
+    text-align:center;
+    padding:20px;
+    text-transform:uppercase;
+    font-size:3vw;
+    letter-spacing:5px;
+    border-top:1px solid;
+    border-bottom:1px solid;
+  }
+  
+  .contentBox{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .buttonBox{
+    margin: 0 20px 40px;
+    position:relative;
+    max-width: 200px;
+    min-width: 150px;
+    flex: 20%;
+  }
+  
+  button{
+    width:200px;
+    height:50px;
+    position:relative;
+    background:rgba(255, 255, 255, 0);
+    color:white;
+    font-weight:700;
+    letter-spacing:1px;
+    border:none;
+    font-size:15px;
+    outline:none;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    cursor: pointer;
+  }
+
+
+  #title {
+    position: relative;
+  }
+
+  
+  .border{
+      position:absolute;
+      background:none;
+      transition:all .5s ease-in-out;
+  }
+  
+  #seventh>button{
+    border:1px solid rgba(255, 255, 255, 0);
+    transition:all .5s ease-in-out;
+  }
+  
+  #seventh:hover button{
+    border:1px solid white;
+    font-size:20px;
+  }
+
+    h2:before {
+        position: absolute;
+        content: '';
+        width: 200px;
+        left: 0;
+        top: 22px;
+        background: white;
+        height: 1px;
+    }
+    h2 i {
+        font-style: normal;
+        background: #fff;
+        position: relative;
+        padding: 10px;
+    }
+    :focus{outline: none;}
+
+    input[type="text"]{font: 15px/24px "Lucida Sans Unicode", "Lucida Grande", sans-serif; color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
+
+    input[type="text"]{font: 15px/24px "Lucida Sans Unicode", "Lucida Grande", sans-serif; color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
+
+
+    .effect-7{border: 1px solid #ccc; padding: 7px 14px 9px; transition: 0.4s;}
+
+    .effect-7 ~ .focus-border:before,
+    .effect-7 ~ .focus-border:after{content: ""; position: absolute; top: 0; left: 50%; width: 0; height: 2px; background-color: white; transition: 0.4s;}
+    .effect-7 ~ .focus-border:after{top: auto; bottom: 0;}
+    .effect-7 ~ .focus-border i:before,
+    .effect-7 ~ .focus-border i:after{content: ""; position: absolute; top: 50%; left: 0; width: 2px; height: 0; background-color: white; transition: 0.6s;}
+    .effect-7 ~ .focus-border i:after{left: auto; right: 0;}
+    .effect-7:focus ~ .focus-border:before,
+    .effect-7:focus ~ .focus-border:after{left: 0; width: 100%; transition: 0.4s;}
+    .effect-7:focus ~ .focus-border i:before,
+    .effect-7:focus ~ .focus-border i:after{top: 0; height: 100%; transition: 0.6s;}
+  
