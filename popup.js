@@ -7,7 +7,7 @@ buttonLTE.addEventListener("click", function(){
     if (checkBox.checked == false) {
         chrome.tabs.create({url:"http://www.archives.nd.edu/cgi-bin/wordz.pl?keyword=" + word.value});
     } else {
-        console.log('google translate word')
+        chrome.tabs.create({url:"https://translate.google.com/?sla=l&tl=en&text="+word.value+"&op=translate"});
     }
 });
 
@@ -15,6 +15,6 @@ buttonETL.addEventListener("click", function(){
     if (checkBox.checked == false) {
         chrome.tabs.create({url:"https://archives.nd.edu/cgi-bin/wordz.pl?english=" + word.value});
     } else{
-        console.log('google translate word')
+        chrome.tabs.create({url:"https://translate.google.com/?sl=en&tl=la&text="+word.value+"&op=translate"});
     }
 });
