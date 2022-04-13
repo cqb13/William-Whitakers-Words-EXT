@@ -5,6 +5,7 @@
   "manifest_version": 3,
 
   "permissions": ["storage", "activeTab", "scripting"],
+  
   "action": {
     "default_title": "William Whitakers Words V.2",
     "default_popup": "popup.html",
