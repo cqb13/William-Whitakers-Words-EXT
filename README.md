@@ -1,2 +1,27 @@
-# William-Whitakers-Words-EXT
-A better version of Whitakers Words in the form of a chrome extention
+<div align="center">
+  <!-- Logo and Title -->
+  <h1>William Whitakers Words EXT</h1>
+  <p>Chrome extention that makes using william whitakers words easier.</p>
+
+  <!-- Fancy badges -->
+<img src="https://img.shields.io/github/languages/code-size/cqb13/William-Whitakers-Words-EXT" alt="Code Size">
+<img src="https://img.shields.io/github/stars/cqb13/William-Whitakers-Words-EXT" alt="Stars">
+</div>
+
+<hr />
+
+# How to install
+- Download the latest [release](/../../releases).
+- Un zip the downloaded file.
+- Turn on developer mode in the chrome extention screen.
+- Press load unpacked and select the file that was downloaded.
+
+*Note: This only works in chrome*
+
+## Features 
+- Latin to English translation | Whitakers Words
+- English to Latin translation | Whitakers Words
+- Latin to English translation | Google Translate
+- English to Latin translation | Google Translate
+
+*Note: Using google translate is less acurate and is not recommended*
