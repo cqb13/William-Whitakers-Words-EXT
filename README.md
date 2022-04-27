@@ -4,7 +4,6 @@
   <p>Chrome extention that makes using william whitakers words easier.</p>
 
 <!-- Fancy badges -->
-<img src="https://img.shields.io/github/downloads/cqb13/William-Whitakers-Words-EXT/total?color=blue">
 <img src="https://img.shields.io/github/languages/code-size/cqb13/William-Whitakers-Words-EXT" alt="Code Size">
 <img src="https://img.shields.io/github/stars/cqb13/William-Whitakers-Words-EXT" alt="Stars">
 </div>
