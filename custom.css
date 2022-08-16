@@ -1,166 +1,41 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  html{
-    background-color: #333;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    padding:1vw;
-  }
-  
-  h1{
-    color:white;
-    margin:30px auto;
-    width:200px;
-    text-align:center;
-    padding:20px;
-    text-transform:uppercase;
-    font-size:3vw;
-    letter-spacing:5px;
-    border-top:1px solid;
-    border-bottom:1px solid;
-  }
-  
-  .contentBox{
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-  .buttonBox{
-    margin: 0 20px 40px;
-    position:relative;
-    max-width: 200px;
-    min-width: 150px;
-    flex: 20%;
-  }
-  
-  button{
-    width:200px;
-    height:50px;
-    position:relative;
-    background:rgba(255, 255, 255, 0);
-    color:white;
-    font-weight:700;
-    letter-spacing:1px;
-    border:none;
-    font-size:15px;
-    outline:none;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    cursor: pointer;
-  }
+body {
+	margin: 0px;
+  width: 250px;
+  height: 200px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  background-color: #444;
+}
 
+input[type="entry"] {
+  width: 80%;
+  margin: 10px;
+  margin-top: 20px;
+  font-size: inherit;
+  color: #444;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
 
-  #title {
-    position: relative;
-  }
+input[type="button"] {
+  margin: 10px;
+  width: 80%;
+  font-size: inherit;
+  color: #fff;
+  background-color: #444;
+  border: 1px solid #fff;
+}
 
-  
-  .border{
-      position:absolute;
-      background:none;
-      transition:all .5s ease-in-out;
-  }
-  
-  #ETL>button{
-    border:1px solid rgba(255, 255, 255, 0);
-    transition:all .5s ease-in-out;
-  }
+input[type="button"]:hover {
+  color: #444;
+  background-color: #fff;
+  border-color: #444;
+}
 
-  #LTE>button{
-    border:1px solid rgba(255, 255, 255, 0);
-    transition:all .5s ease-in-out;
-  }
-  
-  #LTE:hover button{
-    border:1px solid white;
-    font-size:20px;
-  }
+input[type="button"]:active {
+  scale: 1.2;
+}
 
-  #ETL:hover button{
-    border:1px solid white;
-    font-size:20px;
-  }
-
-    h2:before {
-        position: absolute;
-        content: '';
-        width: 200px;
-        left: 0;
-        top: 22px;
-        background: white;
-        height: 1px;
-    }
-    h2 i {
-        font-style: normal;
-        background: #fff;
-        position: relative;
-        padding: 10px;
-    }
-    :focus{outline: none;}
-
-    input[type="text"]{font: 15px/24px "Lucida Sans Unicode", "Lucida Grande", sans-serif; color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
-
-    input[type="text"]{font: 15px/24px "Lucida Sans Unicode", "Lucida Grande", sans-serif; color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
-
-
-    .effect{border: 1px solid #ccc; padding: 7px 14px 9px; transition: 0.4s;}
-
-    strong {text-align: right;}
-    #title {
-      color: white;
-      width: 200px;
-      font-size: 15px;
-      font-weight: 700;
-      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    }
-  
-    .boxes {
-      margin: auto;
-      padding: 10px;
-    }
-    
-    /*Checkboxes styles*/
-    input[type="checkbox"] { display: none; }
-    
-    input[type="checkbox"] + label {
-      display: block;
-      position: absolute;
-      padding-left: 35px;
-      margin-bottom: 10px;
-      width: 200px;
-      font-size: 15px;
-      font-weight: 700;
-      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-      color: white;
-      cursor: pointer;
-    }
-    
-    input[type="checkbox"] + label:last-child { margin-bottom: 0; }
-    
-    input[type="checkbox"] + label:before {
-      content: '';
-      display: block;
-      width: 20px;
-      height: 20px;
-      border: 1px solid white;
-      position: absolute;
-      left: 0;
-      top: 0;
-      opacity: .6;
-      -webkit-transition: all .12s, border-color .08s;
-      transition: all .12s, border-color .08s;
-    }
-    
-    input[type="checkbox"]:checked + label:before {
-      width: 10px;
-      top: -5px;
-      left: 5px;
-      border-radius: 0;
-      opacity: 1;
-      border-top-color: transparent;
-      border-left-color: transparent;
-      -webkit-transform: rotate(45deg);
-      transform: rotate(45deg);
-    }

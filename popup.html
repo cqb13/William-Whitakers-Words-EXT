@@ -4,23 +4,22 @@
     <link rel="stylesheet" href="custom.css">
   </head>
   <body>
-    <strong id="title">William Whitakers Words EXT</strong>
-  </div>
-    <input id="entry" class="effect" type="text" placeholder="Enter a word">
-      <span class="focus-border">
-        <i></i>
-      </span>
-      <div class="boxes">
-        <input type="checkbox" id="box">
-        <label for="box">Google Translate</label>
-      </div>
-    <br /> <br /> <br />
-    <div name="LTE" id="LTE" class="buttonBox">
-      <button>Latin to English</button>
+    <div class="title">
+      <strong id="title">William Whitakers Words EXT</strong>
     </div>
-    <div name="ETL" id="ETL" class="buttonBox">
-      <button>English to Latin</button>
-      <script src="popup.js"></script>
+
+    <div>
+      <input id="word" type="entry" placeholder="Enter a word">
+    </div>
+
+    <div class="buttons">
+      <div class="LTE">
+        <input id="LTE" type="button" value="Latin to English">
+      </div>
+      <div class="ETL">
+        <input id="ETL" type="button" value="English to Latin">
+      </div>
     </div>
   </body>
+  <script src="popup.js"></script>
 </html>
