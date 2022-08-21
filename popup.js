@@ -22,7 +22,7 @@ buttonLTE.addEventListener("click", function(){
     if (word.value == ""){
         chrome.notifications.create(error);
     } else { 
-        chrome.tabs.create({url:"https://archives.nd.edu/cgi-bin/wordz.pl?english=" + word.value});
+        chrome.tabs.create({url:"http://www.archives.nd.edu/cgi-bin/wordz.pl?keyword=" + word.value});
     }
 });
 
