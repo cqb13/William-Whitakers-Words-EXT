@@ -1,11 +1,11 @@
 {
   "name": "William Whitakers Words V.2",
   "description": "William Whitakers Words that works",
-  "version": "1.0",
+  "version": "0.1.1",
   "manifest_version": 3,
 
   "permissions": ["storage", "activeTab", "scripting", "notifications"],
-  
+
   "action": {
     "default_title": "William Whitakers Words V.2",
     "default_popup": "popup.html",

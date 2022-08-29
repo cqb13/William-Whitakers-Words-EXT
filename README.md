@@ -21,7 +21,3 @@
 ## Features 
 - Latin to English translation | Whitakers Words
 - English to Latin translation | Whitakers Words
-- Latin to English translation | Google Translate
-- English to Latin translation | Google Translate
-
-*Note: Using google translate is less acurate and is not recommended*
