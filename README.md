@@ -11,16 +11,20 @@
 <hr />
 
 # How to install
+
 - Download the latest [release](/../../releases).
 - Un zip the downloaded folder.
 - Turn on developer mode in the chrome extention screen.
 - Press load unpacked and select the un ziped folder.
 
-*Note: This only works in chrome*
+_Note: This only works in chrome_
 
-## Features 
+## Features
+
 - Latin to English translation | Whitakers Words
 - English to Latin translation | Whitakers Words
 
 ## Todo
-- make whitakers words look better
+
+- fix word when searching (or edit link)
+- fix bottom bar

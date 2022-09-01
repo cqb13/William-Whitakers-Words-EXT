@@ -1,16 +1,36 @@
 body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-size: 20px;
     font-weight: 300;
     color: #fff;
     background-color: #444;
 }
 
+::-webkit-scrollbar {
+	width: 0px;
+}
+
 h2 {
-    font-size: 40px;
+    display: none;
 }
 
 a:-webkit-any-link {
     color: #fff;
     cursor: pointer;
+}
+
+.footer {
+    font-family: "Ubuntu", sans-serif;
+    background: rgb(73, 107, 190);
+    padding: 1rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+svg.footerIcon {
+    height: 24px;
+    fill: #fff;
 }

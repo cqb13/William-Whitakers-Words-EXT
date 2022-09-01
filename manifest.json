@@ -1,16 +1,22 @@
 {
   "name": "William Whitakers Words EXT",
   "description": "William Whitakers Words that works",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "manifest_version": 3,
 
   "permissions": ["storage", "activeTab", "scripting", "notifications"],
 
-  "content_scripts": [{
-    "css": ["./edits/whitakers-words-style.css"],
-    "js": ["./edits/whitakers-words-content.js"],
-    "matches": ["http://www.archives.nd.edu/*", "https://archives.nd.edu/cgi-bin/*"]
-  }],
+  "content_scripts": [
+    {
+      "css": ["./edits/whitakers-words-style.css"],
+      "js": ["./edits/whitakers-words-content.js"],
+      "matches": [
+        "http://www.archives.nd.edu/*",
+        "https://archives.nd.edu/cgi-bin/*"
+      ],
+      "use_dynamic_url": true
+    }
+  ],
 
   "action": {
     "default_title": "William Whitakers Words V.2",
