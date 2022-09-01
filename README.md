@@ -26,5 +26,4 @@ _Note: This only works in chrome_
 
 ## Todo
 
-- fix bottom bar
 - light / dark mode options (maybe)
