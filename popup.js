@@ -1,7 +1,6 @@
 const buttonLTE = document.getElementById("LTE");
 const buttonETL = document.getElementById("ETL");
 const word = document.getElementById("word");
-var search = "";
 
 // errors
 const error = {
@@ -23,7 +22,6 @@ buttonLTE.addEventListener("click", function () {
   if (word.value == "") {
     chrome.notifications.create(error);
   } else {
-    search = word.value
     chrome.tabs.create({
       url: "http://www.archives.nd.edu/cgi-bin/wordz.pl?keyword=" + word.value,
     });
@@ -38,7 +36,6 @@ buttonETL.addEventListener("click", function () {
     if (word.value.indexOf(" ") >= 0) {
       chrome.notifications.create(tooMany);
     }
-    search = word.value;
     chrome.tabs.create({
       url: "https://archives.nd.edu/cgi-bin/wordz.pl?english=" + word.value,
     });

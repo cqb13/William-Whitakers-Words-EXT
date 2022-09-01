@@ -1,11 +1,11 @@
 const main = document.getElementsByTagName("body")[0];
-import search from '../popup.js';
+const title = document.getElementsByTagName("a")[0];
 
 main.insertAdjacentHTML(
   "afterbegin",
   `
       <h1 align="center">
-          <a href="https://github.com/cqb13/William-Whitakers-Words-EXT">${search}</a>
+          <a href="https://github.com/cqb13/William-Whitakers-Words-EXT">${title.innerHTML}</a>
       </h1>
       `
 );

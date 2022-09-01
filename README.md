@@ -26,5 +26,5 @@ _Note: This only works in chrome_
 
 ## Todo
 
-- fix word when searching (or edit link)
 - fix bottom bar
+- light / dark mode options (maybe)
