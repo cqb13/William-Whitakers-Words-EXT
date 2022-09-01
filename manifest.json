@@ -6,6 +6,11 @@
 
   "permissions": ["storage", "activeTab", "scripting", "notifications"],
 
+  "content_scripts": [{
+    "css": ["whitakers-words-style.css"],
+    "matches": ["http://www.archives.nd.edu/*", "https://archives.nd.edu/cgi-bin/*"]
+  }],
+
   "action": {
     "default_title": "William Whitakers Words V.2",
     "default_popup": "popup.html",
