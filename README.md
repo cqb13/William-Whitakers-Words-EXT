@@ -21,3 +21,6 @@
 ## Features 
 - Latin to English translation | Whitakers Words
 - English to Latin translation | Whitakers Words
+
+## Todo
+- make whitakers words look better
