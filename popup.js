@@ -47,16 +47,13 @@ buttonETL.addEventListener("click", function () {
 viewMode.addEventListener("click", function () {
   chrome.storage.sync.get("mode", function (data) {
     var lightMode = data.mode;
-
     if (lightMode == false) {
       lightMode = true;
-      console.log("after " + lightMode);
       viewMode.value = "Dark Mode";
     } else {
       lightMode = false;
       viewMode.value = "Light Mode";
     }
-
     chrome.storage.sync.set({ mode: lightMode });
     toggleViewMode();
   });
@@ -65,7 +62,6 @@ viewMode.addEventListener("click", function () {
 // Gets the view mode when the extension is opened to change to light mode if it is saved
 function startUp() {
   chrome.storage.sync.get("mode", function (data) {
-    console.log(data.mode);
     if (data.mode == true) {
       viewMode.value = "Light Mode";
       toggleViewMode();

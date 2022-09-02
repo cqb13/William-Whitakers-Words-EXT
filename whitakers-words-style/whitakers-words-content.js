@@ -1,5 +1,12 @@
+const titleColor = document.getElementsByTagName("h1")[0];
 const main = document.getElementsByTagName("body")[0];
 const title = document.getElementsByTagName("a")[0];
+
+chrome.storage.sync.get("mode", function (data) {
+  if (data.mode == true) {
+   main.classList.toggle("light-mode");
+  }
+});
 
 main.insertAdjacentHTML(
   "afterbegin",

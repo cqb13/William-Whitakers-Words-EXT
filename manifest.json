@@ -1,15 +1,15 @@
 {
   "name": "William Whitakers Words EXT",
   "description": "William Whitakers Words that adds back english to latin translation",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "manifest_version": 3,
 
   "permissions": ["storage", "activeTab", "scripting", "notifications"],
 
   "content_scripts": [
     {
-      "css": ["./edits/whitakers-words-style.css"],
-      "js": ["./edits/whitakers-words-content.js"],
+      "css": ["./whitakers-words-style/whitakers-words-style.css"],
+      "js": ["./whitakers-words-style/whitakers-words-content.js"],
       "matches": [
         "http://www.archives.nd.edu/*",
         "https://archives.nd.edu/cgi-bin/*"

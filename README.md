@@ -26,4 +26,4 @@ _Note: This only works in chrome_
 
 ## Todo
 
-- make whitakers words reflect view mode
+- better icon
