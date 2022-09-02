@@ -26,5 +26,4 @@ _Note: This only works in chrome_
 
 ## Todo
 
-- remember users view mode options
 - make whitakers words reflect view mode

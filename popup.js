@@ -41,29 +41,16 @@ buttonETL.addEventListener("click", function () {
       url: "https://archives.nd.edu/cgi-bin/wordz.pl?english=" + word.value,
     });
   }
-
-  chrome.storage.sync.get("mode" ,function (data) {
-    console.log("yes save " + data.mode)
-  })
 });
 
 // Light / Dark mode
 viewMode.addEventListener("click", function () {
   chrome.storage.sync.get("mode", function (data) {
     var lightMode = data.mode;
-    if (data.mode == null) {
-      lightMode = false;
-      console.log("doing something false")
-    } else if (lightMode == true) {
-      console.log("doing something")
-      lightMode = true
-    } else {
-      console.log("not right " + lightMode)
-    }
 
     if (lightMode == false) {
       lightMode = true;
-      console.log("after " + lightMode)
+      console.log("after " + lightMode);
       viewMode.value = "Dark Mode";
     } else {
       lightMode = false;
@@ -75,6 +62,17 @@ viewMode.addEventListener("click", function () {
   });
 });
 
+// Gets the view mode when the extension is opened to change to light mode if it is saved
+function startUp() {
+  chrome.storage.sync.get("mode", function (data) {
+    console.log(data.mode);
+    if (data.mode == true) {
+      viewMode.value = "Light Mode";
+      toggleViewMode();
+    }
+  });
+}
+
 function toggleViewMode() {
   document.getElementsByTagName("body")[0].classList.toggle("light-mode");
   buttonETL.classList.toggle("light-mode-border");
@@ -82,3 +80,5 @@ function toggleViewMode() {
   viewMode.classList.toggle("light-mode-border");
   word.classList.toggle("light-mode-border");
 }
+
+startUp();
