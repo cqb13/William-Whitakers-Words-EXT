@@ -1,5 +1,6 @@
 <div align="center">
   <!-- Logo and Title -->
+  <img src="./images/icon.png" alt="logo" width="20%"/>
   <h1>William Whitakers Words EXT</h1>
   <p>A chrome extension that allows you to translate words using William Whitakers Words</p>
 
