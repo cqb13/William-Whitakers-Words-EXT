@@ -1,8 +1,7 @@
+const viewMode = document.getElementById("view-mode");
 const buttonLTE = document.getElementById("LTE");
 const buttonETL = document.getElementById("ETL");
-const viewMode = document.getElementById("view-mode");
 const word = document.getElementById("word");
-var lightMode = false;
 
 // errors
 const error = {
@@ -42,18 +41,38 @@ buttonETL.addEventListener("click", function () {
       url: "https://archives.nd.edu/cgi-bin/wordz.pl?english=" + word.value,
     });
   }
+
+  chrome.storage.sync.get("mode" ,function (data) {
+    console.log("yes save " + data.mode)
+  })
 });
 
 // Light / Dark mode
 viewMode.addEventListener("click", function () {
-  if (lightMode == false) {
-    lightMode = true;
-    viewMode.value = "Dark Mode";
-  } else {
-    lightMode = false;
-    viewMode.value = "Light Mode";
-  }
-  toggleViewMode();
+  chrome.storage.sync.get("mode", function (data) {
+    var lightMode = data.mode;
+    if (data.mode == null) {
+      lightMode = false;
+      console.log("doing something false")
+    } else if (lightMode == true) {
+      console.log("doing something")
+      lightMode = true
+    } else {
+      console.log("not right " + lightMode)
+    }
+
+    if (lightMode == false) {
+      lightMode = true;
+      console.log("after " + lightMode)
+      viewMode.value = "Dark Mode";
+    } else {
+      lightMode = false;
+      viewMode.value = "Light Mode";
+    }
+
+    chrome.storage.sync.set({ mode: lightMode });
+    toggleViewMode();
+  });
 });
 
 function toggleViewMode() {

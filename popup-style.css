@@ -38,7 +38,7 @@ input[type="entry"]:focus {
 }
 
 ::placeholder {
-  color: hsla(223, 47%, 52%, 0.6); 
+  color: #4b6cbe99; 
 }
 
 input[type="button"] {
