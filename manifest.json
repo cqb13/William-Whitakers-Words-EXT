@@ -1,6 +1,6 @@
 {
   "name": "William Whitakers Words EXT",
-  "description": "William Whitakers Words that adds back english to latin translation",
+  "description": "A chrome extension that allows you to translate words using William Whitakers Words",
   "version": "0.1.5",
   "manifest_version": 3,
 

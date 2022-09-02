@@ -1,7 +1,7 @@
 <div align="center">
   <!-- Logo and Title -->
   <h1>William Whitakers Words EXT</h1>
-  <p>Chrome extention that makes using william whitakers words easier.</p>
+  <p>A chrome extension that allows you to translate words using William Whitakers Words</p>
 
 <!-- Fancy badges -->
 <img src="https://img.shields.io/github/languages/code-size/cqb13/William-Whitakers-Words-EXT" alt="Code Size">
@@ -23,7 +23,4 @@ _Note: This only works in chrome_
 
 - Latin to English translation | Whitakers Words
 - English to Latin translation | Whitakers Words
-
-## Todo
-
-- better icon
+- Dark and light mode!

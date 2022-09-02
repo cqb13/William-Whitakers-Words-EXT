@@ -15,7 +15,7 @@ const tooMany = {
   type: "basic",
   iconUrl: "/images/icon128.png",
   title: "error",
-  message: "can only searches one word",
+  message: "only one word can be translated",
 };
 
 // Latin to English
