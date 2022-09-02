@@ -1,7 +1,7 @@
 {
   "name": "William Whitakers Words EXT",
-  "description": "William Whitakers Words that works",
-  "version": "0.1.3",
+  "description": "William Whitakers Words that adds back english to latin translation",
+  "version": "0.1.4",
   "manifest_version": 3,
 
   "permissions": ["storage", "activeTab", "scripting", "notifications"],

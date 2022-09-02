@@ -2,7 +2,7 @@ body {
     font-family: "Ubuntu", sans-serif;
     font-size: 20px;
     font-weight: 300;
-    color: #fff;
+    color: #f5f7fa;
     background-color: #444;
 }
 
@@ -15,7 +15,7 @@ h2 {
 }
 
 a:-webkit-any-link {
-    color: #fff;
+    color: #f5f7fa;
     cursor: pointer;
 }
 
@@ -23,7 +23,7 @@ a:-webkit-any-link {
     font-family: "Ubuntu", sans-serif;
     background: rgb(73, 107, 190);
     padding: 1rem;
-    color: #fff;
+    color: #f5f7fa;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,5 +32,5 @@ a:-webkit-any-link {
 
 svg.footerIcon {
     height: 24px;
-    fill: #fff;
+    fill: #f5f7fa;
 }
