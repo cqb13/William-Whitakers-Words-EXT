@@ -20,7 +20,7 @@
 
 <details><summary>Install Tutorial</summary>
 
-[<img src="./images/icon.png" width="50%">](https://www.youtube.com/watch?v=Hc79sDi3f0U "Now in Android: 55")
+[<img src="./images/icon.png" width="50%">](https://www.youtube.com/watch?v=Hc79sDi3f0U "Install Tutorial")
 
 </details>
 <br>
