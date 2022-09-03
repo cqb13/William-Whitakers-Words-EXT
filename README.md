@@ -18,6 +18,13 @@
 - Turn on developer mode in the chrome extention screen.
 - Press load unpacked and select the un ziped folder.
 
+<details><summary>Install Tutorial</summary>
+
+
+
+</details>
+<br>
+
 _Note: This only works in chrome_
 
 ## Features
