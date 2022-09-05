@@ -4,11 +4,12 @@ const buttonETL = document.getElementById("ETL");
 const word = document.getElementById("word");
 
 // errors
-const error = {
+const noText = {
   type: "basic",
   iconUrl: "/images/icon128.png",
   title: "error",
   message: "text not found | enter a word",
+  buttons: [{ title: "Close" }],
 };
 
 const tooMany = {
@@ -16,12 +17,13 @@ const tooMany = {
   iconUrl: "/images/icon128.png",
   title: "error",
   message: "only one word can be translated",
+  buttons: [{ title: "Close" }],
 };
 
 // Latin to English
 buttonLTE.addEventListener("click", function () {
   if (word.value == "") {
-    chrome.notifications.create(error);
+    chrome.notifications.create(noText);
   } else {
     chrome.tabs.create({
       url: "http://www.archives.nd.edu/cgi-bin/wordz.pl?keyword=" + word.value,
@@ -32,7 +34,7 @@ buttonLTE.addEventListener("click", function () {
 // English to Latin
 buttonETL.addEventListener("click", function () {
   if (word.value == "") {
-    chrome.notifications.create(error);
+    chrome.notifications.create(noText);
   } else {
     if (word.value.indexOf(" ") >= 0) {
       chrome.notifications.create(tooMany);
