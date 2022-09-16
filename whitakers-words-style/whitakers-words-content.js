@@ -1,5 +1,6 @@
 const titleColor = document.getElementsByTagName("h1")[0];
 const main = document.getElementsByTagName("body")[0];
+const head = document.getElementsByTagName("head")[0];
 const title = document.getElementsByTagName("a")[0];
 
 chrome.storage.sync.get("mode", function (data) {
@@ -7,6 +8,13 @@ chrome.storage.sync.get("mode", function (data) {
     main.classList.toggle("light-mode");
   }
 });
+
+head.insertAdjacentHTML(
+  "afterbegin",
+  `
+    <link rel="icon" href="https://raw.githubusercontent.com/cqb13/William-Whitakers-Words-EXT/main/images/icon.png" />
+  `
+);
 
 main.insertAdjacentHTML(
   "afterbegin",
