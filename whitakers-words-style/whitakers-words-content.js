@@ -2,6 +2,27 @@ const main = document.getElementsByTagName("body")[0];
 const head = document.getElementsByTagName("head")[0];
 const title = document.getElementsByTagName("a")[0];
 
+// errors
+function noText() {
+  var notification = new Notification("error", {
+    icon: "https://github.com/cqb13/William-Whitakers-Words-EXT/blob/main/images/icon128.png?raw=true",
+    body: "text not found | enter a word",
+  });
+  notification.onclick = function () {
+    notification.close();
+  };
+}
+
+function tooMany() {
+  var notification = new Notification("error", {
+    icon: "https://github.com/cqb13/William-Whitakers-Words-EXT/blob/main/images/icon128.png?raw=true",
+    body: "only one word can be translated",
+  });
+  notification.onclick = function () {
+    notification.close();
+  };
+}
+
 chrome.storage.sync.get("mode", function (data) {
   if (data.mode == true) {
     main.classList.toggle("light-mode");
@@ -10,9 +31,10 @@ chrome.storage.sync.get("mode", function (data) {
 
 function openTab(url) {
   if (word.value == "") {
-    chrome.notifications.create(noText);
+    noText();
+  } else {
+    window.location.replace(url);
   }
-  window.location.replace(url);
 }
 
 head.insertAdjacentHTML(
@@ -64,9 +86,9 @@ buttonLTE.addEventListener("click", function () {
 
 // English to Latin
 buttonETL.addEventListener("click", function () {
-  if (word.value.indexOf(" ") >= 0) {
-    chrome.notifications.create(tooMany);
-  }
   url = "https://archives.nd.edu/cgi-bin/wordz.pl?english=" + word.value;
+  if (word.value.indexOf(" ") >= 0) {
+    tooMany();
+  }
   openTab(url);
 });
