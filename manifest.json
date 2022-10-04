@@ -1,7 +1,7 @@
 {
   "name": "William Whitakers Words EXT",
   "description": "A chrome extension that allows you to translate words using William Whitakers Words",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "manifest_version": 3,
 
   "permissions": ["storage", "activeTab", "scripting", "notifications"],
