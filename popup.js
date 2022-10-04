@@ -1,7 +1,8 @@
 const viewMode = document.getElementById("view-mode");
-const buttonLTE = document.getElementById("LTE");
-const buttonETL = document.getElementById("ETL");
+const buttonLTE = document.getElementById("LTE-E");
+const buttonETL = document.getElementById("ETL-E");
 const word = document.getElementById("word");
+var url;
 
 // errors
 const noText = {
@@ -22,28 +23,25 @@ const tooMany = {
 
 // Latin to English
 buttonLTE.addEventListener("click", function () {
-  if (word.value == "") {
-    chrome.notifications.create(noText);
-  } else {
-    chrome.tabs.create({
-      url: "http://www.archives.nd.edu/cgi-bin/wordz.pl?keyword=" + word.value,
-    });
-  }
+  url = "http://www.archives.nd.edu/cgi-bin/wordz.pl?keyword=" + word.value;
+  openTab(url);
 });
 
 // English to Latin
 buttonETL.addEventListener("click", function () {
+  if (word.value.indexOf(" ") >= 0) {
+    chrome.notifications.create(tooMany);
+  }
+  url = "https://archives.nd.edu/cgi-bin/wordz.pl?english=" + word.value;
+  openTab(url);
+});
+
+function openTab(url) {
   if (word.value == "") {
     chrome.notifications.create(noText);
-  } else {
-    if (word.value.indexOf(" ") >= 0) {
-      chrome.notifications.create(tooMany);
-    }
-    chrome.tabs.create({
-      url: "https://archives.nd.edu/cgi-bin/wordz.pl?english=" + word.value,
-    });
   }
-});
+  chrome.tabs.create({ url: url });
+}
 
 // Light / Dark mode
 viewMode.addEventListener("click", function () {
@@ -73,10 +71,7 @@ function startUp() {
 
 function toggleViewMode() {
   document.getElementsByTagName("body")[0].classList.toggle("light-mode");
-  buttonETL.classList.toggle("light-mode-border");
-  buttonLTE.classList.toggle("light-mode-border");
-  viewMode.classList.toggle("light-mode-border");
-  word.classList.toggle("light-mode-border");
 }
 
 startUp();
+export { noText, tooMany };

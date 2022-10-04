@@ -1,41 +1,74 @@
 body {
-    font-family: "Ubuntu", sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    color: #f5f7fa;
-    background-color: #444;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: #f5f7fa;
+  background-color: #444;
 }
 
 .light-mode {
-    color: #444;
-    background-color: #f5f7fa;
+  color: #444;
+  background-color: #f5f7fa;
 }
 
 ::-webkit-scrollbar {
-    width: 0px;
+  width: 0px;
 }
 
 h2 {
-    display: none;
+  display: none;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="entry"] {
+  width: 80%;
+  height: 50px;
+  color: inherit;
+  font-size: 25px;
+  background-color: inherit;
+}
+
+input[type="entry"]:focus {
+  background-color: inherit;
+}
+
+input[type="button"] {
+  margin: 10px;
+  width: 30%;
+  color: inherit;
+  font-size: 25px;
+  background-color: inherit;
 }
 
 a:-webkit-any-link {
-    color: inherit;
-    cursor: pointer;
+  color: inherit;
+  cursor: pointer;
 }
 
 .footer {
-    font-family: "Ubuntu", sans-serif;
-    background: rgb(73, 107, 190);
-    padding: 1rem;
-    color: #f5f7fa;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+  background: rgb(73, 107, 190);
+  padding: 1rem;
+  color: #f5f7fa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
 }
 
 svg.footerIcon {
-    height: 24px;
-    fill: #f5f7fa;
+  height: 24px;
+  fill: #f5f7fa;
 }

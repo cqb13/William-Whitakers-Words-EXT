@@ -1,4 +1,3 @@
-const titleColor = document.getElementsByTagName("h1")[0];
 const main = document.getElementsByTagName("body")[0];
 const head = document.getElementsByTagName("head")[0];
 const title = document.getElementsByTagName("a")[0];
@@ -8,6 +7,13 @@ chrome.storage.sync.get("mode", function (data) {
     main.classList.toggle("light-mode");
   }
 });
+
+function openTab(url) {
+  if (word.value == "") {
+    chrome.notifications.create(noText);
+  }
+  window.location.replace(url);
+}
 
 head.insertAdjacentHTML(
   "afterbegin",
@@ -22,6 +28,13 @@ main.insertAdjacentHTML(
       <h1 align="center">
           <a href="https://github.com/cqb13/William-Whitakers-Words-EXT">${title.innerHTML}</a>
       </h1>
+      <div class="search">
+        <input id="word" type="entry" placeholder="Enter a word" />
+      </div>
+      <div class="options">
+        <input id="LTE-W" type="button" value="Latin to English" />
+        <input id="ETL-W" type="button" value="English to Latin" />
+      </div>
       `
 );
 
@@ -38,3 +51,22 @@ main.insertAdjacentHTML(
     </div>
     `
 );
+
+// needs to be here, or it wont work
+const buttonLTE = document.getElementById("LTE-W");
+const buttonETL = document.getElementById("ETL-W");
+
+// Latin to English
+buttonLTE.addEventListener("click", function () {
+  url = "http://www.archives.nd.edu/cgi-bin/wordz.pl?keyword=" + word.value;
+  openTab(url);
+});
+
+// English to Latin
+buttonETL.addEventListener("click", function () {
+  if (word.value.indexOf(" ") >= 0) {
+    chrome.notifications.create(tooMany);
+  }
+  url = "https://archives.nd.edu/cgi-bin/wordz.pl?english=" + word.value;
+  openTab(url);
+});

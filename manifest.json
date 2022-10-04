@@ -8,11 +8,14 @@
 
   "content_scripts": [
     {
-      "css": ["./whitakers-words-style/whitakers-words-style.css"],
+      "css": [
+        "./whitakers-words-style/whitakers-words-style.css",
+        "./global.css"
+      ],
       "js": ["./whitakers-words-style/whitakers-words-content.js"],
       "matches": [
-        "http://www.archives.nd.edu/*",
-        "https://archives.nd.edu/cgi-bin/*"
+        "http://www.archives.nd.edu/cgi-bin/wordz.pl*",
+        "https://archives.nd.edu/cgi-bin/wordz.pl*"
       ],
       "use_dynamic_url": true
     }

@@ -1,0 +1,36 @@
+input[type="entry"] {
+  text-align: center;
+  border: 1px solid #ffffff00;
+  border-radius: 4px;
+  outline: none;
+  caret-color: rgba(73, 107, 190, 0.5);
+}
+
+input[type="entry"]:hover {
+  border: 1px solid rgba(73, 107, 190, 0.5);
+  transition: 400ms;
+}
+
+input[type="entry"]:focus {
+  border: 1px solid #496bbe;
+  transition: 400ms;
+}
+
+::placeholder {
+  color: #4b6cbe99;
+}
+
+input[type="button"] {
+  border: 1px solid #ffffff00;
+  border-radius: 4px;
+}
+
+input[type="button"]:hover {
+  background-color: #496bbe66;
+  border-color: #496bbe;
+  transition: 400ms;
+}
+
+input[type="button"]:active {
+  scale: 1.2;
+}

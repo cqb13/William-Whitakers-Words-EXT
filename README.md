@@ -20,7 +20,22 @@
 
 _Note: This only works in chrome_
 
-## Features
+<hr />
+
+# How to use:
+
+## method 1:
+
+- open the extension like you would any other
+- enter a word and press the button that fits your needs
+
+## method 2:
+
+- with the extension installed go to this [site](https://archives.nd.edu/cgi-bin/wordz.pl)
+- enter a word and press the button that fits your needs
+<hr />
+
+# Features:
 
 - Latin to English translation | Whitakers Words
 - English to Latin translation | Whitakers Words
