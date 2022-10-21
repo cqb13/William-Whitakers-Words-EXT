@@ -39,8 +39,9 @@ buttonETL.addEventListener("click", function () {
 function openTab(url) {
   if (word.value == "") {
     chrome.notifications.create(noText);
+  } else {
+    chrome.tabs.create({ url: url });
   }
-  chrome.tabs.create({ url: url });
 }
 
 // Light / Dark mode
