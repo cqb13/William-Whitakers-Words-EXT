@@ -1,6 +1,6 @@
 const viewMode = document.getElementById("view-mode");
-const buttonLTE = document.getElementById("LTE-E");
-const buttonETL = document.getElementById("ETL-E");
+const buttonLTE = document.getElementById("LTE");
+const buttonETL = document.getElementById("ETL");
 const word = document.getElementById("word");
 var url;
 
@@ -74,4 +74,3 @@ function toggleViewMode() {
 }
 
 startUp();
-export { noText, tooMany };
