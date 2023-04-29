@@ -4,6 +4,12 @@
   <h1>William Whitakers Words EXT</h1>
   <p>A chrome extension that allows you to translate words using William Whitakers Words</p>
 
+  <div style="color: red">
+
+  **This Extension No Longer Works**
+
+  </div>
+
 <!-- Fancy badges -->
 <img src="https://img.shields.io/github/languages/code-size/cqb13/William-Whitakers-Words-EXT" alt="Code Size">
 <img src="https://img.shields.io/github/stars/cqb13/William-Whitakers-Words-EXT" alt="Stars">
